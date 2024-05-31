@@ -1,0 +1,122 @@
+{
+  "name":"BMW-X5MD",
+  "description":"bot whatsapp développé by Ibrahim adams",
+  "keywords":["bot","node","baileys","whatsapp"],
+  "logo":"https://telegra.ph/file/7cd9d893413bffb0c5bdb.jpg",
+  "repository":"https://github.com/ibrahimaitech/BMW-MD",
+  "succes_url":"/",
+  "stack":"container",
+  "env":{
+    "PREFIX":
+    {
+      "description":"choose your prefix of bot",
+      "value":"^",
+      "required":true
+    },
+    "AUTO_READ_STATUS":
+    {
+      "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "value":"yes",
+      "required":false
+    }, "AUTO_DOWNLOAD_STATUS":
+    {
+      "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
+      "value":"no",
+      "required":false
+    }
+    ,
+     "PM_PERMIT" :
+     {
+      "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
+      "value":"no",
+      "required":false
+    }
+    ,
+    "BOT_NAME" : {
+       
+      "description":"put A name for your bot",
+      "value":"𝘾𝙤𝙣𝙛𝙧𝙤𝙣𝙩𝙚𝙧._",
+      "required":false
+
+    } ,
+     "BOT_MENU_LINKS" : {
+    
+      "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
+      "value":"https://telegra.ph/file/3a5c71b7115423ae1e96d.jpg",
+      "required":false
+       
+     },
+    "PUBLIC_MODE":
+    {
+      "description":"type yes to put your bot on public mode or no to put it on private mod",
+      "value":"false",
+      "required":false
+    }
+	,
+    "HEROKU_API_KEY": {
+    "description": "insert your heroku api-key (this is optionnal)",
+     "required" :false
+    },
+  "HEROKU_APP_NAME": {
+    "description": "insert your heroku APP NAME (this is optionnal)",
+     "required" :false
+    }  
+	  ,
+    "SESSION_ID":
+    {
+      "description":"put your session ID , the code you receive after scanning Qr code",   
+      "value":"eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiU0MvYzBjMmo3c2VKRTU2b0MzWERZTXZjdTVqN1BWRFd2NGczbUN6THRudz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNGROS2VvTVZvNml1TlJkL0I2VlBpZENhQkxPZ3hKa0xFMnBzeXl2Q0V3UT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ3TDdQMi9KMGlSYlhqN1FWWlNCVW1ZRFNtKzNISDNFb2w0dlk3YURnVVVFPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIvTFpoZHpJOXl1TitJcThUWXVUMVhQUjV2N1NPZnJoa01XWEpZL1lZTnhVPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlNKTzhzSHI0M2drays2Vkd1cjNESHFwT2pwanMvc1R4OVFRSXIxc3ZJa2M9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InRVZmNSd1d0a0pZNkpGWEs4RGo3YVZPMFdHTWk2VFVOTzZJcm0xWkJqaHM9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS1BLSUxIaUxyQUZobHIzNFppcGdBd2VpVzJzc2NCVHJKQzlTV2JUUXZrND0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiazlPb1R6Q01pc3I1Slg5SGRZeFVqOGVXVk9KZVBwSU1GZzhTSlk2SVQxOD0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InlpVHZtNEV6M2dFZmpvQ29JTTRoS1dmNjlqUVlGWGw0RWNxcklqcDMwa1ViRUJ0ODJJVHp2UmNMazE5SkNxZ0lCbGpTV1VwNVlPcDhpZGo2b2tBRURBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTI0LCJhZHZTZWNyZXRLZXkiOiIzZ2FjbERXQTRRaUFNRXpwcnoybzh5K29JV1NaTVppeW5vMXlRNzdlT2VZPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJJVFNRbUc0UFRvQ3EzcF9HTnljSW9BIiwicGhvbmVJZCI6IjU2YTRhMDMxLTMzN2UtNGIzNy1iY2E1LTVhYTE4MDY1ZTg1MyIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJIRGZQdU0vdWNONXdiblgxYXZpcWg2bDVxaDQ9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZElBbUQxZzRZMUxLdThRU2JlUlcvN1dyRUZjPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IjdaSk40Q1hNIiwibWUiOnsiaWQiOiIyNTQ3OTYyODMwNjQ6MzNAcy53aGF0c2FwcC5uZXQifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ0xlajFmWURFSlBFMkxJR0dBWWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6IlJLaFR4azlWTmJwdkxjbjdjVWhoVnRQS1YvekMrM1ZEZTVmTUE4S1QyQ289IiwiYWNjb3VudFNpZ25hdHVyZSI6InJBT3hnRHFvaG5LWWM1anA5RUVub2pLWk5QMXRkU2oyT1JHV0d1REZCMUpLSzh6VEJuQXozbCswakJCQ3NOcW11MERoMmtrTFlyVndWTUxSZy9xamh3PT0iLCJkZXZpY2VTaWduYXR1cmUiOiIybGtuNnM2aVJxUE5naVBzcEo0Wkpzb3FkMGNaZisvczN2eXhYOFBtNTFGeCszZ1JUTWFIeFBBTU5EdWF2dWFoUTFPZ3QwaEs1c1l0bVFkZ3lRalREdz09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjI1NDc5NjI4MzA2NDozM0BzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJVU29VOFpQVlRXNmJ5M0orM0ZJWVZiVHlsZjh3dnQxUTN1WHpBUENrOWdxIn19XSwicGxhdGZvcm0iOiJpcGhvbmUiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MTY5MjA4NjQsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBRm4xIn0=",
+      "required":true
+      
+    },
+    "OWNER_NAME":
+    {
+    
+    "desc": "Your Name",
+    "required": false,
+    "value": "𝘾𝙤𝙣𝙛𝙧𝙤𝙣𝙩𝙚𝙧._"
+  },
+    "NUMERO_OWNER":
+  {
+    
+    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
+    "required":false,
+    "value": "+254796283064"
+  },
+    "WARN_COUNT":
+  {
+    "desc": "this is the limit of warn for warning commandes",
+    "required": false,
+    "value": "3"
+  },
+  "STARTING_BOT_MESSAGE":
+  {
+    "description": "if you don't want startting-bot-message put no else put yes",
+    "required": true,
+    "value": "false"
+  },
+  "PRESENCE":{
+    "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
+    "value":"",
+    "required": false
+  },
+  "ANTI_DELETE_MESSAGE" : {
+    "description": "if you want to enable anti delete message put yes else put no",
+    "value": "yes",
+    "required": false
+  }
+  },
+
+  "formation": {
+		"worker": {
+			"quantity": 1,
+			"size": "basic"
+		}
+	},
+
+  "addons":[
+    {
+      "plan":"heroku-postgresql"
+    }
+  ]
+}
